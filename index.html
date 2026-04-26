@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="generator" aria-labelledby="title">
+      <div class="header">
+        <p class="eyebrow">Seguranca simples</p>
+        <h1 id="title">Gerador de Senhas</h1>
+      </div>
+
+      <div class="password-box">
+        <input id="password" type="text" readonly aria-label="Senha gerada">
+        <button id="copyBtn" class="icon-button" type="button" aria-label="Copiar senha" title="Copiar senha">
+          <span aria-hidden="true">Copiar</span>
+        </button>
+      </div>
+
+      <div class="strength">
+        <div class="strength-header">
+          <span>Forca</span>
+          <strong id="strengthLabel">Boa</strong>
+        </div>
+        <div class="meter" aria-hidden="true">
+          <span id="strengthBar"></span>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="control-header">
+          <label for="length">Tamanho</label>
+          <output id="lengthValue" for="length">16</output>
+        </div>
+        <input id="length" type="range" min="6" max="40" value="16">
+      </div>
+
+      <fieldset class="options">
+        <legend>Caracteres</legend>
+        <label>
+          <input id="uppercase" type="checkbox" checked>
+          Letras maiusculas
+        </label>
+        <label>
+          <input id="lowercase" type="checkbox" checked>
+          Letras minusculas
+        </label>
+        <label>
+          <input id="numbers" type="checkbox" checked>
+          Numeros
+        </label>
+        <label>
+          <input id="symbols" type="checkbox" checked>
+          Simbolos
+        </label>
+      </fieldset>
+
+      <button id="generateBtn" class="primary-button" type="button">Gerar senha</button>
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
