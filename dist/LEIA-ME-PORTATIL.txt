@@ -1,0 +1,13 @@
+GeradorDeSenhas.exe
+
+Versao portatil para Windows.
+
+Como usar:
+- Copie este arquivo .exe para o pendrive.
+- Abra o executavel em qualquer computador Windows com .NET Framework 4.x.
+- O app nao precisa de instalacao e nao pede permissao de administrador.
+
+Observacao de seguranca:
+- O executavel foi compilado localmente a partir do arquivo PasswordGeneratorPortable.cs.
+- Ele nao usa empacotador, ofuscador, instalador ou download de dependencias.
+- Como nao ha assinatura digital de editor, o Windows SmartScreen pode exibir aviso de "editor desconhecido" em alguns computadores. Para evitar esse aviso de forma profissional, seria necessario assinar o .exe com um certificado de assinatura de codigo.
